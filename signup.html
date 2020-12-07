@@ -65,7 +65,7 @@ a:active {
 </nav>
 <p><a href="login.html" style="color:pink">Back</a></p>
 <h1><center>Please enter the following details to signup</center></h1><br>
-<form method="get" action="http://localhost:8000/signup">
+<form method="post">
 <fieldset>
 <div class="head">
 <h2><center>Personal Information</center></h2>
@@ -81,7 +81,7 @@ a:active {
                <option value = "Dr.">Dr.</option>
              </select>
 <input type="text" id="fname" name="fname" required style="color:black"><br><br>
-<h3>Last Name:<h3>
+<h3>Last Name:</h3>
 <input type="text" id="lname" name="lname" required style="color:black"><br><br>
 <h3>Date of Birth:</h3>
 <input type="date" id="dob" name="dob" required style="color:black"><br><br>
@@ -131,7 +131,10 @@ Gyenecological<br><br>
 <input type="text" id="uname" name="uname" required style="color:black"><br><br>
 <h3>Password:</h3>
 <input type="password" id="pwd" name="pwd" required style="color:black"><br><br>
-<center><input type="submit" value="Submit" name = "signup" style="color:black"/>&ensp;&ensp;<input type="reset" value="Reset" style="color:black"/></center>
+<center>
+<input type="submit" name="signup" value="Sign up" style="color:black" formaction="http://localhost:3000/signup" />
+<input type="submit" name="signup" value="Save"  style="color:black" formaction="http://localhost:3000/save"/>
+<input type="reset" value="Reset" style="color:black"/></center>
 </h3>
 </fieldset>
 </form>
